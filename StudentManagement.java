@@ -32,11 +32,15 @@ public class StudentManagement {
                 }
 
             } else if (choice == 2) {
+                if (count == 0) {
+                    System.out.println("The student list is empty.");
+                } else {
                 // VIEW: print all students
                 System.out.println("Student List:");
                 for (int i = 0; i < count; i++) {
                     System.out.println((i + 1) + ". " + students[i]);
                 }
+            }
 
             } else if (choice == 3) {
                 // DELETE: shift all next elements one step to the left
